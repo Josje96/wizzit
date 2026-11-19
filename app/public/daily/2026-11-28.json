@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-28",
+  "questions": [
+    {
+      "id": 1377,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 45°. What bearing leads you straight back?",
+      "choices": [
+        "270°",
+        "225°",
+        "315°",
+        "135°"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "Add 180°: 45° → 225°. That's called the back bearing."
+    },
+    {
+      "id": 732,
+      "category": "Math",
+      "prompt": "What is the name of a nine sided polygon?",
+      "choices": [
+        "Nonagon",
+        "Hexagon",
+        "Octagon",
+        "Heptagon"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1357,
+      "category": "Home & DIY",
+      "prompt": "A four-sided frame with equal opposite sides is perfectly square at the corners when its diagonals are…",
+      "choices": [
+        "Different lengths",
+        "Equal length",
+        "Half the perimeter",
+        "Shorter than the sides"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "Measure corner to corner both ways. Equal diagonals mean a true rectangle, the standard check for decks and foundations."
+    },
+    {
+      "id": 1513,
+      "category": "History",
+      "prompt": "In which one of these cities did the Great Stink of 1858 occur?",
+      "choices": [
+        "Moscow",
+        "London",
+        "Berlin",
+        "New York"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1491,
+      "category": "History",
+      "prompt": "The United States Department of Homeland Security was formed in response to the September 11th attacks.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1595,
+      "category": "Animals",
+      "prompt": "How many legs do butterflies have?",
+      "choices": [
+        "4",
+        "0",
+        "6",
+        "2"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1600,
+      "category": "Animals",
+      "prompt": "Which dog breed is named after a region in Croatia",
+      "choices": [
+        "Pomeranian",
+        "Pekingnese",
+        "Chihuahua",
+        "Dalmatian"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 21,
+      "category": "General Knowledge",
+      "prompt": "What style of beer will typically have a higher than average hop content?",
+      "choices": [
+        "Stout",
+        "Scotch Ale",
+        "India Pale Ale",
+        "Extra Special Bitter"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 994,
+      "category": "Geography",
+      "prompt": "Colombia is named after Christopher Columbus.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1432,
+      "category": "Kitchen",
+      "prompt": "A recipe that serves 4 uses 2 cups of flour. How many cups to serve 6?",
+      "choices": [
+        "4",
+        "2½",
+        "3",
+        "3½"
+      ],
+      "answerIndex": 2,
+      "source": "original",
+      "explanation": "Multiply by 6/4: 2 × 6 ÷ 4 = 3."
+    }
+  ]
+}

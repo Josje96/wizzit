@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-23",
+  "questions": [
+    {
+      "id": 1616,
+      "category": "Animals",
+      "prompt": "The dish Fugu, is made from what family of fish?",
+      "choices": [
+        "Pufferfish",
+        "Mackerel",
+        "Bass",
+        "Salmon"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 465,
+      "category": "Science",
+      "prompt": "Water always boils at 100°C, 212°F, 373.15K, no matter where you are.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 402,
+      "category": "General Knowledge",
+      "prompt": "Romanian belongs to the Romance language family, shared with French, Spanish, Portuguese and Italian.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1399,
+      "category": "Money",
+      "prompt": "A jacket costs $80 and is 25% off. What do you pay?",
+      "choices": [
+        "$70",
+        "$60",
+        "$20",
+        "$55"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "25% of $80 is $20, so you pay $80 − $20 = $60."
+    },
+    {
+      "id": 1427,
+      "category": "Travel",
+      "prompt": "Driving at 50 mph for 3 hours, how far do you go?",
+      "choices": [
+        "170 miles",
+        "140 miles",
+        "160 miles",
+        "150 miles"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Distance = speed × time: 50 × 3 = 150 miles."
+    },
+    {
+      "id": 1386,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 315°. What bearing leads you straight back?",
+      "choices": [
+        "180°",
+        "225°",
+        "45°",
+        "135°"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Subtract 180°: 315° → 135°. That's called the back bearing."
+    },
+    {
+      "id": 792,
+      "category": "Geography",
+      "prompt": "Which is the smallest country in the world?",
+      "choices": [
+        "Vatican City",
+        "Monaco City",
+        "Titania",
+        "Lesotho"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1519,
+      "category": "History",
+      "prompt": "Which one of these was not a beach landing site in the Invasion of Normandy?",
+      "choices": [
+        "Gold",
+        "Juno",
+        "Silver",
+        "Sword"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 211,
+      "category": "General Knowledge",
+      "prompt": "Which mountain has the highest peak in Africa?",
+      "choices": [
+        "Mount Stanley, DR Congo/Uganda",
+        "Mount Speke, Uganda",
+        "Mount Kilimanjaro, Tanzania",
+        "Mount Kenya, Kenya"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 140,
+      "category": "General Knowledge",
+      "prompt": "What is the most frequently used letter in the english alphabet?",
+      "choices": [
+        "I",
+        "E",
+        "A",
+        "O"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    }
+  ]
+}

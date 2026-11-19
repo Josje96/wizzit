@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-26",
+  "questions": [
+    {
+      "id": 758,
+      "category": "Geography",
+      "prompt": "The land mass of modern day Turkey is called what?",
+      "choices": [
+        "Anatolia",
+        "Ottoma",
+        "Ismuth of Anatolia",
+        "Ismuth of Ottoma"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1395,
+      "category": "Home & DIY",
+      "prompt": "Squaring a corner: you mark 6 ft on one wall and 8 ft on the other. What should the diagonal be?",
+      "choices": [
+        "11 ft",
+        "10 ft",
+        "14 ft",
+        "9 ft"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "6² + 8² = 10² (36 + 64 = 100). A 10 ft diagonal means a true 90° corner."
+    },
+    {
+      "id": 1429,
+      "category": "Travel",
+      "prompt": "Driving at 30 mph for 30 minutes, how far do you go?",
+      "choices": [
+        "15 miles",
+        "5 miles",
+        "25 miles",
+        "35 miles"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Distance = speed × time: 30 × 0.5 = 15 miles."
+    },
+    {
+      "id": 864,
+      "category": "Geography",
+      "prompt": "Which country ranks first in the number of historically active volcanoes?",
+      "choices": [
+        "India",
+        "Indonesia",
+        "Japan",
+        "USA"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1380,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 135°. What bearing leads you straight back?",
+      "choices": [
+        "225°",
+        "315°",
+        "45°",
+        "0°"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "Add 180°: 135° → 315°. That's called the back bearing."
+    },
+    {
+      "id": 1304,
+      "category": "History",
+      "prompt": "America's Strategic Defense System during the Cold War was nicknamed after this famous movie.",
+      "choices": [
+        "Jaws",
+        "Alien",
+        "Star Wars",
+        "Blade Runner"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 531,
+      "category": "Science",
+      "prompt": "Male pandas do handstands while urinating on trees.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 989,
+      "category": "Geography",
+      "prompt": "What is the capital of Belarus?",
+      "choices": [
+        "Warsaw",
+        "Vilnius",
+        "Kiev",
+        "Minsk"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 715,
+      "category": "Math",
+      "prompt": "Which two men are credited with independently discovering differential calculus?",
+      "choices": [
+        "Asiimov and Rutherford",
+        "Plato and Aristotle",
+        "Newton and Leibnitz",
+        "Dvorak and Smith"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1625,
+      "category": "Animals",
+      "prompt": "The Killer Whale is considered a type of dolphin.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-12-01",
+  "questions": [
+    {
+      "id": 985,
+      "category": "Geography",
+      "prompt": "Which US state is furthest north east?",
+      "choices": [
+        "Florida",
+        "Georgia",
+        "New York",
+        "Maine"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1420,
+      "category": "Kitchen",
+      "prompt": "What is 20°C in °F?",
+      "choices": [
+        "52°F",
+        "68°F",
+        "78°F",
+        "58°F"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "°F = °C × 1.8 + 32, so 20 × 1.8 + 32 = 68. Quick estimate: double it and add 30."
+    },
+    {
+      "id": 842,
+      "category": "Geography",
+      "prompt": "Greenland is a part of which kingdom?",
+      "choices": [
+        "Denmark",
+        "United Kingdom",
+        "Norway",
+        "Sweden"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1400,
+      "category": "Money",
+      "prompt": "A jacket costs $40 and is 25% off. What do you pay?",
+      "choices": [
+        "$35",
+        "$15",
+        "$30",
+        "$10"
+      ],
+      "answerIndex": 2,
+      "source": "original",
+      "explanation": "25% of $40 is $10, so you pay $40 − $10 = $30."
+    },
+    {
+      "id": 1134,
+      "category": "History",
+      "prompt": "Which of the following African countries was most successful in resisting colonization?",
+      "choices": [
+        "Namibia",
+        "Congo",
+        "Côte d’Ivoire",
+        "Ethiopia"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 965,
+      "category": "Geography",
+      "prompt": "What is the capital of Bangladesh?",
+      "choices": [
+        "Khulna",
+        "Lahore",
+        "Dhaka",
+        "London"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1587,
+      "category": "Animals",
+      "prompt": "Hippocampus is the Latin name for which marine creature?",
+      "choices": [
+        "Dolphin",
+        "Octopus",
+        "Whale",
+        "Seahorse"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1102,
+      "category": "History",
+      "prompt": "Who was the first man to travel into outer space?",
+      "choices": [
+        "Virgil Ivan \"Gus\" Grissom",
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "Buzz Aldrin"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1324,
+      "category": "History",
+      "prompt": "In World War ll, Great Britian used inflatable tanks on the ports of Great Britain to divert Hitler away from Normandy/D-day landing.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1361,
+      "category": "Home & DIY",
+      "prompt": "In most US homes, wall studs are spaced how far apart, center to center?",
+      "choices": [
+        "30 inches",
+        "16 inches",
+        "20 inches",
+        "12 inches"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "16 in. on center is the standard. 24 in. also shows up in some newer construction."
+    }
+  ]
+}

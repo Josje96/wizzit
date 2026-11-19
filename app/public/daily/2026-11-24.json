@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-24",
+  "questions": [
+    {
+      "id": 1241,
+      "category": "History",
+      "prompt": "In addition to his career as an astrologer and \"prophet\", Nostradamus published a 1555 treatise that included a section on what?",
+      "choices": [
+        "Teaching parrots to talk",
+        "Making jams and jellies",
+        "Digging graves",
+        "Cheating at card games"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1606,
+      "category": "Animals",
+      "prompt": "The Axolotl is an amphibian that can spend its whole life in a larval state.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1370,
+      "category": "Kitchen",
+      "prompt": "How many teaspoons make one tablespoon?",
+      "choices": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "3 tsp = 1 tbsp. No tablespoon handy? Use three teaspoons."
+    },
+    {
+      "id": 1403,
+      "category": "Money",
+      "prompt": "A jacket costs $50 and is 20% off. What do you pay?",
+      "choices": [
+        "$40",
+        "$45",
+        "$10",
+        "$30"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "20% of $50 is $10, so you pay $50 − $10 = $40."
+    },
+    {
+      "id": 1520,
+      "category": "History",
+      "prompt": "The first televised presidential debate was between Jimmy Carter and Gerald Ford.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 993,
+      "category": "Geography",
+      "prompt": "Ottawa is the capital of Canada.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1385,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 300°. What bearing leads you straight back?",
+      "choices": [
+        "210°",
+        "30°",
+        "60°",
+        "120°"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Subtract 180°: 300° → 120°. That's called the back bearing."
+    },
+    {
+      "id": 714,
+      "category": "Math",
+      "prompt": "What is the derivative of Acceleration with respect to time?",
+      "choices": [
+        "Jerk",
+        "Shift",
+        "Bump",
+        "Slide"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 232,
+      "category": "General Knowledge",
+      "prompt": "What does the F stand for in the FBI?",
+      "choices": [
+        "Formal",
+        "Federal",
+        "First",
+        "Foreign"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 654,
+      "category": "Science",
+      "prompt": "Rhinoplasty is a surgical procedure on what part of the human body?",
+      "choices": [
+        "Nose",
+        "Chin",
+        "Neck",
+        "Ears"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-30",
+  "questions": [
+    {
+      "id": 945,
+      "category": "Geography",
+      "prompt": "What is the only country in the world with a flag that doesn't have four right angles?",
+      "choices": [
+        "Panama",
+        "Angola",
+        "Egypt",
+        "Nepal"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1229,
+      "category": "History",
+      "prompt": "Where was Portuguese explorer Ferdinand Magellan killed in 1521?",
+      "choices": [
+        "The Phillipines",
+        "Guam",
+        "Canary Islands",
+        "Argentina"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1382,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 200°. What bearing leads you straight back?",
+      "choices": [
+        "20°",
+        "160°",
+        "110°",
+        "290°"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Subtract 180°: 200° → 20°. That's called the back bearing."
+    },
+    {
+      "id": 235,
+      "category": "General Knowledge",
+      "prompt": "The US emergency hotline is 911 because of the September 11th terrorist attacks.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1166,
+      "category": "History",
+      "prompt": "Joseph Stalin had a criminal past doing what?",
+      "choices": [
+        "Murder for Hire",
+        "Robbing Trains",
+        "Identity Fraud",
+        "Tax Evasion"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 709,
+      "category": "Math",
+      "prompt": "The sum of any two odd integers is odd.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1396,
+      "category": "Home & DIY",
+      "prompt": "Squaring a corner: you mark 9 ft on one wall and 12 ft on the other. What should the diagonal be?",
+      "choices": [
+        "15 ft",
+        "14 ft",
+        "16 ft",
+        "21 ft"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "9² + 12² = 15² (81 + 144 = 225). A 15 ft diagonal means a true 90° corner."
+    },
+    {
+      "id": 1209,
+      "category": "History",
+      "prompt": "Which Las Vegas casino was originally constructed and operated by mobster Bugsy Siegel?",
+      "choices": [
+        "The Sahara",
+        "The Sands",
+        "The Flamingo",
+        "The MGM Grand"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1599,
+      "category": "Animals",
+      "prompt": "What color/colour is a polar bear's skin?",
+      "choices": [
+        "Black",
+        "White",
+        "Pink",
+        "Green"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1411,
+      "category": "Money",
+      "prompt": "Your bill is $75. What's a 20% tip?",
+      "choices": [
+        "$7.50",
+        "$11.25",
+        "$18.75",
+        "$15"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Take 10% by moving the decimal ($7.50), then double it: $15."
+    }
+  ]
+}

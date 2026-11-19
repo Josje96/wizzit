@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-25",
+  "questions": [
+    {
+      "id": 850,
+      "category": "Geography",
+      "prompt": "What is the largest Muslim country in the world?",
+      "choices": [
+        "Pakistan",
+        "Indonesia",
+        "Iran",
+        "Saudi Arabia"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 935,
+      "category": "Geography",
+      "prompt": "What is the capital of Chile?",
+      "choices": [
+        "Santiago",
+        "Valparaíso",
+        "Copiapó",
+        "Antofagasta"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1354,
+      "category": "Navigation",
+      "prompt": "How many degrees are in a full turn on a compass?",
+      "choices": [
+        "180°",
+        "360°",
+        "100°",
+        "270°"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "A full circle is 360°, so North is both 0° and 360°."
+    },
+    {
+      "id": 1430,
+      "category": "Travel",
+      "prompt": "Driving at 70 mph for 2 hours, how far do you go?",
+      "choices": [
+        "140 miles",
+        "160 miles",
+        "130 miles",
+        "150 miles"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Distance = speed × time: 70 × 2 = 140 miles."
+    },
+    {
+      "id": 1577,
+      "category": "History",
+      "prompt": "What year did the Titanic sink?",
+      "choices": [
+        "1930",
+        "1941",
+        "1917",
+        "1912"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1252,
+      "category": "History",
+      "prompt": "What was Manfred von Richthofen's nickname?",
+      "choices": [
+        "The High Flying Ace",
+        "The Germany Gunner",
+        "The Blue Serpent",
+        "The Red Baron"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1588,
+      "category": "Animals",
+      "prompt": "Sea sponges can have hearts.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1368,
+      "category": "Money",
+      "prompt": "\"Compounded monthly\" means interest is added…",
+      "choices": [
+        "12 times a year",
+        "Only at the end",
+        "Every day",
+        "Once a year"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Each month's interest is added to the balance, and the next month earns interest on it."
+    },
+    {
+      "id": 594,
+      "category": "Science",
+      "prompt": "Shrimp can swim backwards.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 254,
+      "category": "General Knowledge",
+      "prompt": "In which country was the 1992 Summer Olympics Games held?",
+      "choices": [
+        "USA",
+        "Korea",
+        "Spain",
+        "Russia"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    }
+  ]
+}

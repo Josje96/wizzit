@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.env.*
+
+# The live SQLite database stays out of git (it will hold private player flags).
+# Its questions + schedule are versioned as text in content/data/questions.sql (bun run dump).
+*.db
+*.db-wal
+*.db-shm
+*.db.bak-*

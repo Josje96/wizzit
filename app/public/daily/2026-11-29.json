@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-29",
+  "questions": [
+    {
+      "id": 148,
+      "category": "General Knowledge",
+      "prompt": "How many letters are in the English alphabet?",
+      "choices": [
+        "17",
+        "5",
+        "26",
+        "30"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1387,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 330°. What bearing leads you straight back?",
+      "choices": [
+        "240°",
+        "60°",
+        "150°",
+        "30°"
+      ],
+      "answerIndex": 2,
+      "source": "original",
+      "explanation": "Subtract 180°: 330° → 150°. That's called the back bearing."
+    },
+    {
+      "id": 145,
+      "category": "General Knowledge",
+      "prompt": "In a standard set of playing cards, which is the only king without a moustache?",
+      "choices": [
+        "Diamonds",
+        "Hearts",
+        "Clubs",
+        "Spades"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 374,
+      "category": "General Knowledge",
+      "prompt": "The vapor produced by e-cigarettes is actually water.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1620,
+      "category": "Animals",
+      "prompt": "About how much of their body weight in food do sea otters eat every day?",
+      "choices": [
+        "25%",
+        "10%",
+        "45%",
+        "80%"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 971,
+      "category": "Geography",
+      "prompt": "Montreal is in which Canadian province?",
+      "choices": [
+        "Alberta",
+        "Ontario",
+        "Quebec",
+        "Nova Scotia"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1358,
+      "category": "Home & DIY",
+      "prompt": "A \"6 in 12\" roof pitch rises 6 inches for every…",
+      "choices": [
+        "12 degrees",
+        "12 inches of rafter",
+        "12 feet across",
+        "12 inches across"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Pitch is rise over run: 6 in. up for every 12 in. of horizontal distance."
+    },
+    {
+      "id": 1487,
+      "category": "History",
+      "prompt": "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?",
+      "choices": [
+        "Battle of the Coral Sea",
+        "Attack on Pearl Harbor",
+        "Attack on Truk Island",
+        "Battle of Midway"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 744,
+      "category": "Math",
+      "prompt": "What is the least number of sides a polygon can have?",
+      "choices": [
+        "3",
+        "2",
+        "7",
+        "1"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1364,
+      "category": "Money",
+      "prompt": "Simple interest is paid only on…",
+      "choices": [
+        "The interest earned so far",
+        "The original amount",
+        "The original plus past interest",
+        "Your highest balance"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "Compound interest also earns interest on past interest, which is why it grows faster."
+    }
+  ]
+}

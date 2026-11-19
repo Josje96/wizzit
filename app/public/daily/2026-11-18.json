@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-18",
+  "questions": [
+    {
+      "id": 1383,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 225°. What bearing leads you straight back?",
+      "choices": [
+        "90°",
+        "45°",
+        "135°",
+        "315°"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "Subtract 180°: 225° → 45°. That's called the back bearing."
+    },
+    {
+      "id": 859,
+      "category": "Geography",
+      "prompt": "What state is the largest state of the United States of America?",
+      "choices": [
+        "Texas",
+        "Washington",
+        "California",
+        "Alaska"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1451,
+      "category": "History",
+      "prompt": "What battle was the longest in World War I, lasting approximately 303 days?",
+      "choices": [
+        "Battle of Amiens",
+        "Battle of Stalingrad",
+        "Battle of Passchendaele",
+        "Battle of Verdun"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 264,
+      "category": "General Knowledge",
+      "prompt": "Video streaming website YouTube was purchased in it's entirety by Facebook for US$1.65 billion in stock.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 735,
+      "category": "Math",
+      "prompt": "You can square root a negative number with an imaginary number \"i\".",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1373,
+      "category": "Measurement",
+      "prompt": "One kilometer is roughly how many miles?",
+      "choices": [
+        "0.25",
+        "0.62",
+        "1.6",
+        "1.0"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "1 km ≈ 0.62 mi (and 1 mi ≈ 1.6 km). A 5K race is about 3.1 miles."
+    },
+    {
+      "id": 359,
+      "category": "General Knowledge",
+      "prompt": "Which country developed the AK-47 assault rifle?",
+      "choices": [
+        "Poland",
+        "Israel",
+        "Iran",
+        "Soviet Union"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1363,
+      "category": "Home & DIY",
+      "prompt": "To join two boards in a 90° corner, like a picture frame, each is cut at…",
+      "choices": [
+        "60°",
+        "30°",
+        "90°",
+        "45°"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Two 45° miter cuts add up to the 90° corner."
+    },
+    {
+      "id": 1131,
+      "category": "History",
+      "prompt": "The 15th century conflicts between the Houses of York and Lancaster are known as the Wars of the what?",
+      "choices": [
+        "Wars of the Roses",
+        "Wars of the Lillies",
+        "Wars of the Daffodils",
+        "Wars of the Tulips"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 46,
+      "category": "General Knowledge",
+      "prompt": "What is the currency of Poland?",
+      "choices": [
+        "Ruble",
+        "Krone",
+        "Złoty",
+        "Euro"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-27",
+  "questions": [
+    {
+      "id": 1431,
+      "category": "Travel",
+      "prompt": "Driving at 65 mph for 4 hours, how far do you go?",
+      "choices": [
+        "260 miles",
+        "280 miles",
+        "270 miles",
+        "250 miles"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Distance = speed × time: 65 × 4 = 260 miles."
+    },
+    {
+      "id": 783,
+      "category": "Geography",
+      "prompt": "Which UK country features a dragon on their flag?",
+      "choices": [
+        "Wales",
+        "Scotland",
+        "England",
+        "North Ireland"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1360,
+      "category": "Home & DIY",
+      "prompt": "One gallon of paint covers roughly how many square feet?",
+      "choices": [
+        "100–150",
+        "800–1,000",
+        "50–75",
+        "350–400"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "Most labels say about 350–400 sq ft per coat. Plan on two coats for a big color change."
+    },
+    {
+      "id": 583,
+      "category": "Science",
+      "prompt": "The human heart has how many chambers?",
+      "choices": [
+        "6",
+        "2",
+        "4",
+        "3"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1199,
+      "category": "History",
+      "prompt": "The Fallingwater House, located in Pennsylvania, was designed by which architect?",
+      "choices": [
+        "Le Corbusier",
+        "Frank Lloyd Wright",
+        "Frank Gehry",
+        "Antoni Gaudi"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1388,
+      "category": "Money",
+      "prompt": "At 2% a year, about how many years until your money doubles?",
+      "choices": [
+        "36 years",
+        "24 years",
+        "12 years",
+        "18 years"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Rule of 72: divide 72 by the rate. 72 ÷ 2 = 36 years. It works for inflation and debt too."
+    },
+    {
+      "id": 1273,
+      "category": "History",
+      "prompt": "In which year did the Invasion of Kuwait by Iraq occur?",
+      "choices": [
+        "1990",
+        "1988",
+        "1986",
+        "1992"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1605,
+      "category": "Animals",
+      "prompt": "Which species is a \"mountain chicken\"?",
+      "choices": [
+        "Horse",
+        "Fly",
+        "Chicken",
+        "Frog"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 142,
+      "category": "General Knowledge",
+      "prompt": "The Canadian $1 coin is colloquially known as a what?",
+      "choices": [
+        "Foolie",
+        "Loonie",
+        "Moodie",
+        "Boolie"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 795,
+      "category": "Geography",
+      "prompt": "Which small country is located between the borders of France and Spain?",
+      "choices": [
+        "San Marino",
+        "Andorra",
+        "Vatican City",
+        "Lichtenstein"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-19",
+  "questions": [
+    {
+      "id": 1231,
+      "category": "History",
+      "prompt": "What did the abbreviation \"RMS\" stand for in the RMS Titanic in 1912?",
+      "choices": [
+        "Regulated Maelstrom Sensor",
+        "Royal Mail Ship",
+        "Regular Maritime Schedule",
+        "Royal Majesty Service"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1561,
+      "category": "History",
+      "prompt": "What is the mnemonic device for remembering the fates of the wives of Henry VIII?",
+      "choices": [
+        "Died, Beheaded, Divorced, Beheaded, Survived, Divorced",
+        "Beheaded, Died, Divorced, Divorced, Beheaded, Survived",
+        "Survived, Beheaded, Died, Divorced, Divorced, Beheaded",
+        "Divorced, Beheaded, Died, Divorced, Beheaded, Survived"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 257,
+      "category": "General Knowledge",
+      "prompt": "A pencil's lead is typically made from graphite, not lead",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 239,
+      "category": "General Knowledge",
+      "prompt": "What do the Dutch call their language?",
+      "choices": [
+        "Dansk",
+        "Deutsch",
+        "Nederlands",
+        "Hollander"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 878,
+      "category": "Geography",
+      "prompt": "Australia is greater than Greenland in size.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1170,
+      "category": "History",
+      "prompt": "The Arab Spring was a series of protests and rebellions that began in which of these Arab nations?",
+      "choices": [
+        "Egypt",
+        "Syria",
+        "Tunisia",
+        "Morocco"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1378,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 60°. What bearing leads you straight back?",
+      "choices": [
+        "240°",
+        "300°",
+        "330°",
+        "150°"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Add 180°: 60° → 240°. That's called the back bearing."
+    },
+    {
+      "id": 1374,
+      "category": "Measurement",
+      "prompt": "How many feet are in a mile?",
+      "choices": [
+        "5,000",
+        "1,000",
+        "3,280",
+        "5,280"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "5,280 ft = 1 mile. Fun fact: a kilometer is about 3,280 ft."
+    },
+    {
+      "id": 713,
+      "category": "Math",
+      "prompt": "The Pythagorean theorem states that the square of the hypotenuse is equal to the product of the squares of the other two sides.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1375,
+      "category": "Travel",
+      "prompt": "You drive 300 miles on 10 gallons. What's your fuel economy?",
+      "choices": [
+        "30 mpg",
+        "25 mpg",
+        "3 mpg",
+        "35 mpg"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Miles ÷ gallons: 300 ÷ 10 = 30 mpg."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-20",
+  "questions": [
+    {
+      "id": 127,
+      "category": "General Knowledge",
+      "prompt": "When someone is inexperienced they are said to be what color?",
+      "choices": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1602,
+      "category": "Animals",
+      "prompt": "What is the collective noun for rats?",
+      "choices": [
+        "Race",
+        "Mischief",
+        "Drift",
+        "Pack"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 544,
+      "category": "Science",
+      "prompt": "Which desert is the only desert in the world where the \"Saguaro\" cactus grows indigenously?",
+      "choices": [
+        "The Gobi Desert",
+        "The Arabian Desert",
+        "The Sonoran Desert",
+        "The Yuma Desert"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1512,
+      "category": "History",
+      "prompt": "Who succeded Josef Stalin as the leader of the Soviet Union?",
+      "choices": [
+        "Vyacheslav Molotov",
+        "Georgy Malenkov",
+        "Nikita Krushchev",
+        "Lavrentiy Beria"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 748,
+      "category": "Math",
+      "prompt": "What type of angle is greater than 90°?",
+      "choices": [
+        "Acute",
+        "Straight",
+        "Obtuse",
+        "Right"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 609,
+      "category": "Science",
+      "prompt": "What is the primary addictive substance found in tobacco?",
+      "choices": [
+        "Cathinone",
+        "Glaucine",
+        "Nicotine",
+        "Ephedrine"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1428,
+      "category": "Travel",
+      "prompt": "Driving at 40 mph for 1½ hours, how far do you go?",
+      "choices": [
+        "70 miles",
+        "60 miles",
+        "80 miles",
+        "50 miles"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "Distance = speed × time: 40 × 1.5 = 60 miles."
+    },
+    {
+      "id": 1372,
+      "category": "Measurement",
+      "prompt": "One inch is how many centimeters?",
+      "choices": [
+        "1.5",
+        "3.25",
+        "2.54",
+        "10"
+      ],
+      "answerIndex": 2,
+      "source": "original",
+      "explanation": "1 in = 2.54 cm exactly. A 30 cm ruler is about 12 inches."
+    },
+    {
+      "id": 1355,
+      "category": "Navigation",
+      "prompt": "You're heading North (0°) and turn 90° to the right. What's your new bearing?",
+      "choices": [
+        "90°",
+        "270°",
+        "45°",
+        "180°"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Bearings increase clockwise, so a right turn adds: 0° + 90° = 90° (East)."
+    },
+    {
+      "id": 955,
+      "category": "Geography",
+      "prompt": "Which city is the capital of Switzerland?",
+      "choices": [
+        "Bern",
+        "Wien",
+        "Zürich",
+        "Frankfurt"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    }
+  ]
+}

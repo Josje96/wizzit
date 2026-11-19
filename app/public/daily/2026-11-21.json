@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-21",
+  "questions": [
+    {
+      "id": 1626,
+      "category": "Animals",
+      "prompt": "The freshwater amphibian, the Axolotl, can regrow it's limbs.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1371,
+      "category": "Kitchen",
+      "prompt": "Water freezes at what temperature in °F?",
+      "choices": [
+        "32°F",
+        "212°F",
+        "40°F",
+        "0°F"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "32°F = 0°C. Water boils at 212°F (100°C) at sea level."
+    },
+    {
+      "id": 1352,
+      "category": "Navigation",
+      "prompt": "Roughly which direction does the sun rise?",
+      "choices": [
+        "South",
+        "West",
+        "North",
+        "East"
+      ],
+      "answerIndex": 3,
+      "source": "original",
+      "explanation": "It rises roughly east and sets roughly west, drifting north or south of due east with the seasons."
+    },
+    {
+      "id": 1063,
+      "category": "Geography",
+      "prompt": "Miami is Florida's largest city.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 444,
+      "category": "General Knowledge",
+      "prompt": "The Flag of the European Union has how many stars on it?",
+      "choices": [
+        "10",
+        "16",
+        "14",
+        "12"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 276,
+      "category": "General Knowledge",
+      "prompt": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+      "choices": [
+        "Jet",
+        "Stealth Blimp",
+        "Helicopter",
+        "Space Capsule"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 1454,
+      "category": "History",
+      "prompt": "Which famous military commander marched an army, which included war elephants, over the Alps during the Second Punic War?",
+      "choices": [
+        "Garmanicus",
+        "Alexander the Great",
+        "Hannibal",
+        "Tiberius"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    },
+    {
+      "id": 904,
+      "category": "Geography",
+      "prompt": "Switzerland has four national languages, English being one of them.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1367,
+      "category": "Money",
+      "prompt": "A credit card charges 24% APR. Roughly what is that per month?",
+      "choices": [
+        "24%",
+        "2%",
+        "4%",
+        "0.5%"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "24% ÷ 12 months = 2% a month, charged on any balance you carry."
+    },
+    {
+      "id": 837,
+      "category": "Geography",
+      "prompt": "How many time zones does China have?",
+      "choices": [
+        "1",
+        "4",
+        "2",
+        "3"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    }
+  ]
+}

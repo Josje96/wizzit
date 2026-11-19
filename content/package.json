@@ -1,0 +1,23 @@
+{
+  "name": "@wizzit/content",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:opentdb": "bun src/import-opentdb.ts",
+    "import:opentriviaqa": "bun src/import-opentriviaqa.ts",
+    "seed": "bun src/seed-original.ts",
+    "schedule": "bun src/schedule.ts",
+    "export": "bun src/export.ts",
+    "reject": "bun src/reject.ts",
+    "stats": "bun src/stats.ts",
+    "serve": "bun src/server.ts",
+    "dump": "bun src/dump.ts",
+    "restore": "bun src/restore.ts"
+  },
+  "dependencies": {
+    "@wizzit/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

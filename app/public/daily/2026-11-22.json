@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-22",
+  "questions": [
+    {
+      "id": 491,
+      "category": "Science",
+      "prompt": "Celiac Disease is a disease that effects the heart, causing those effected to be unable to eat meat.",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1397,
+      "category": "Home & DIY",
+      "prompt": "Squaring a corner: you mark 5 ft on one wall and 12 ft on the other. What should the diagonal be?",
+      "choices": [
+        "14 ft",
+        "13 ft",
+        "17 ft",
+        "12 ft"
+      ],
+      "answerIndex": 1,
+      "source": "original",
+      "explanation": "5² + 12² = 13² (25 + 144 = 169). A 13 ft diagonal means a true 90° corner."
+    },
+    {
+      "id": 1615,
+      "category": "Animals",
+      "prompt": "What is the name of the family that the domestic cat is a member of?",
+      "choices": [
+        "Felinae",
+        "Felidae",
+        "Cat",
+        "Felis"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 408,
+      "category": "General Knowledge",
+      "prompt": "The American company \"Campbell's\" is most well known for making what food product?",
+      "choices": [
+        "Canned soups",
+        "Sausages",
+        "Chocolate",
+        "Soft drinks"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1092,
+      "category": "Geography",
+      "prompt": "The White Cliffs of Dover is located in which country?",
+      "choices": [
+        "Sweden",
+        "United Kingdom",
+        "United States",
+        "Netherlands"
+      ],
+      "answerIndex": 1,
+      "source": "opentdb"
+    },
+    {
+      "id": 1426,
+      "category": "Travel",
+      "prompt": "Driving at 60 mph for 2 hours, how far do you go?",
+      "choices": [
+        "120 miles",
+        "140 miles",
+        "110 miles",
+        "130 miles"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Distance = speed × time: 60 × 2 = 120 miles."
+    },
+    {
+      "id": 199,
+      "category": "General Knowledge",
+      "prompt": "What is the most commonly used noun in the English language?",
+      "choices": [
+        "Time",
+        "Water",
+        "Home",
+        "Man"
+      ],
+      "answerIndex": 0,
+      "source": "opentdb"
+    },
+    {
+      "id": 1384,
+      "category": "Navigation",
+      "prompt": "You hiked out on a bearing of 250°. What bearing leads you straight back?",
+      "choices": [
+        "70°",
+        "340°",
+        "110°",
+        "160°"
+      ],
+      "answerIndex": 0,
+      "source": "original",
+      "explanation": "Subtract 180°: 250° → 70°. That's called the back bearing."
+    },
+    {
+      "id": 529,
+      "category": "Science",
+      "prompt": "About what percentage of the Earth's surface is water?",
+      "choices": [
+        "50%",
+        "90%",
+        "30%",
+        "70%"
+      ],
+      "answerIndex": 3,
+      "source": "opentdb"
+    },
+    {
+      "id": 1548,
+      "category": "History",
+      "prompt": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
+      "choices": [
+        "Joseph and Catherine",
+        "George and Anne",
+        "John and Mary",
+        "William and Elizabeth"
+      ],
+      "answerIndex": 2,
+      "source": "opentdb"
+    }
+  ]
+}

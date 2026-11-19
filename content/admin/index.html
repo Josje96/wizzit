@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Wizzit Admin</title>
+<style>
+  :root {
+    --bg: #f6f3ee; --surface: #fff; --surface-2: #efeae2; --text: #1d1b20; --muted: #6b6672;
+    --border: #e2dcd2; --accent: #5b4bdb; --accent-text: #fff; --ok: #1f8a4c; --ok-bg: #e2f4e8;
+    --bad: #c2372f; --bad-bg: #fbe5e3; --warn-bg: #fff4d6;
+    color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.45;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16151a; --surface: #212026; --surface-2: #2a2930; --text: #f1eff4; --muted: #a19daa;
+      --border: #34323b; --accent: #8e80ff; --accent-text: #120f2a; --ok: #55c987; --ok-bg: #183324;
+      --bad: #f17a71; --bad-bg: #3b1d1b; --warn-bg: #3a3218;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); }
+  main { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+  header { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  h1 { font-size: 1.4rem; margin: 0; }
+  button { font: inherit; cursor: pointer; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; }
+  button.primary { background: var(--accent); color: var(--accent-text); border-color: transparent; font-weight: 600; }
+  button.danger { color: var(--bad); border-color: var(--bad); }
+  button:disabled { opacity: .5; cursor: default; }
+  input, textarea { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; width: 100%; }
+  .tabs { display: flex; gap: 6px; }
+  .tabs button[aria-pressed="true"] { background: var(--surface-2); font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: .85rem; color: var(--muted); margin-bottom: 8px; }
+  .count { font-weight: 700; color: var(--bad); }
+  .prompt { font-size: 1.1rem; font-weight: 600; margin: 0 0 10px; }
+  .choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 6px; margin-bottom: 10px; }
+  .choice { padding: 6px 10px; border-radius: 8px; background: var(--surface-2); font-size: .95rem; }
+  .choice.correct { background: var(--ok-bg); color: var(--ok); font-weight: 600; }
+  .expl { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
+  .reasons { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .chip { font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--bad-bg); color: var(--bad); font-weight: 600; }
+  ul.comments { margin: 0 0 12px; padding-left: 18px; font-size: .92rem; }
+  ul.comments li { margin-bottom: 4px; }
+  ul.comments .when { color: var(--muted); font-size: .8rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .notice { padding: 10px 14px; border-radius: 10px; background: var(--warn-bg); margin-bottom: 14px; font-size: .92rem; }
+  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
+  form.edit { display: grid; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+  form.edit label { font-size: .85rem; color: var(--muted); display: grid; gap: 4px; }
+  #login { max-width: 360px; margin: 15vh auto; display: grid; gap: 10px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <form id="login" hidden>
+    <h1>Wizzit Admin</h1>
+    <input id="token" type="password" placeholder="Admin token" autocomplete="current-password" required />
+    <button class="primary">Sign in</button>
+    <p id="login-error" class="expl"></p>
+  </form>
+
+  <section id="app" hidden>
+    <header>
+      <h1>Flagged questions</h1>
+      <div class="tabs" role="group" aria-label="Status">
+        <button data-status="open" aria-pressed="true">Open</button>
+        <button data-status="resolved" aria-pressed="false">Resolved</button>
+      </div>
+      <div class="actions">
+        <button id="export">Re-export daily files</button>
+        <button id="logout">Sign out</button>
+      </div>
+    </header>
+    <div id="notice" class="notice" hidden></div>
+    <div id="list"></div>
+  </section>
+</main>
+
+<script>
+  const REASONS = {
+    "wrong-answer": "Wrong answer", confusing: "Confusing", obscure: "Too obscure",
+    typo: "Typo", offensive: "Offensive", other: "Other",
+  };
+  let status = "open";
+  const $ = (s) => document.querySelector(s);
+
+  // Every bit of player-supplied text goes in via textContent, never innerHTML.
+  function el(tag, props = {}, ...children) {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(props)) {
+      if (k === "class") n.className = v;
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else if (v !== undefined && v !== null && v !== false) n.setAttribute(k, v === true ? "" : v);
+    }
+    for (const c of children.flat()) if (c != null) n.append(c instanceof Node ? c : String(c));
+    return n;
+  }
+
+  const getToken = () => { try { return sessionStorage.getItem("wizzit-admin") || ""; } catch { return ""; } };
+  const setToken = (t) => { try { t ? sessionStorage.setItem("wizzit-admin", t) : sessionStorage.removeItem("wizzit-admin"); } catch {} };
+
+  async function api(path, opts = {}) {
+    const res = await fetch(path, {
+      ...opts,
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${getToken()}`, ...(opts.headers || {}) },
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.status === 401) { setToken(""); showLogin("Token rejected."); throw new Error("Unauthorized"); }
+    if (!res.ok) throw new Error(body.error || `HTTP ${res.status}`);
+    return body;
+  }
+
+  function notice(msg) {
+    const n = $("#notice");
+    n.textContent = msg;
+    n.hidden = !msg;
+  }
+
+  function showLogin(err = "") {
+    $("#app").hidden = true;
+    $("#login").hidden = false;
+    $("#login-error").textContent = err;
+    $("#token").focus();
+  }
+
+  async function load() {
+    $("#login").hidden = true;
+    $("#app").hidden = false;
+    const list = $("#list");
+    list.replaceChildren(el("p", { class: "empty" }, "Loading…"));
+    try {
+      const { questions } = await api(`/admin/api/flags?status=${status}`);
+      list.replaceChildren(...(questions.length ? questions.map(card) : [el("p", { class: "empty" }, status === "open" ? "Nothing flagged. 🎉" : "No resolved flags yet.")]));
+    } catch (e) {
+      if (e.message !== "Unauthorized") list.replaceChildren(el("p", { class: "empty" }, `Error: ${e.message}`));
+    }
+  }
+
+  function card(q) {
+    const counts = {};
+    for (const f of q.flags) counts[f.reason] = (counts[f.reason] || 0) + 1;
+    const comments = q.flags.filter((f) => f.comment);
+    const choices = [q.correct, ...q.incorrect];
+    const editable = q.source !== "original";
+
+    const root = el("article", { class: "card" },
+      el("div", { class: "meta" },
+        el("span", { class: "count" }, `${q.flag_count} flag${q.flag_count === 1 ? "" : "s"}`),
+        el("span", {}, `#${q.id}`),
+        el("span", {}, q.category),
+        el("span", {}, q.source === "original" ? `ours · ${q.source_ref}` : q.source),
+        q.scheduled_on ? el("span", {}, `scheduled ${q.scheduled_on}`) : null,
+        q.status === "rejected" ? el("span", { class: "count" }, "rejected") : null,
+        status === "resolved" ? el("span", {}, `resolution: ${q.flags[0]?.resolution ?? "?"}`) : null,
+      ),
+      el("p", { class: "prompt" }, q.prompt),
+      el("div", { class: "choices" }, choices.map((c, i) => el("div", { class: `choice${i === 0 ? " correct" : ""}` }, (i === 0 ? "✓ " : "") + c))),
+      q.explanation ? el("p", { class: "expl" }, q.explanation) : null,
+      el("div", { class: "reasons" }, Object.entries(counts).map(([r, n]) => el("span", { class: "chip" }, `${REASONS[r] || r} × ${n}`))),
+      comments.length
+        ? el("ul", { class: "comments" }, comments.map((f) => el("li", {}, `“${f.comment}” `, el("span", { class: "when" }, `${REASONS[f.reason] || f.reason}, ${f.created_at.slice(0, 10)}`))))
+        : null,
+    );
+
+    if (status === "open") {
+      const actions = el("div", { class: "actions" });
+      const busy = (on) => actions.querySelectorAll("button").forEach((b) => (b.disabled = on));
+
+      actions.append(
+        el("button", { class: "danger", onclick: async () => {
+          if (!confirm(`Reject #${q.id}? It will never be used again and gets swapped out of upcoming days.`)) return;
+          busy(true);
+          try {
+            const r = await api(`/admin/api/questions/${q.id}/reject`, { method: "POST" });
+            notice(r.replaced
+              ? `Rejected #${q.id}; replaced on ${r.replaced.date} with #${r.replaced.withId}. Daily files re-exported. Deploy to publish.`
+              : r.unreplaced ? `Rejected #${q.id}, but no replacement was available for ${r.unreplaced}!`
+              : `Rejected #${q.id}.`);
+            load();
+          } catch (e) { notice(`Error: ${e.message}`); busy(false); }
+        } }, "Reject"),
+        editable
+          ? el("button", { onclick: () => { form.hidden = !form.hidden; } }, "Edit")
+          : el("button", { disabled: true, title: "Our own questions are edited in content/questions/*.ts" }, "Edit in code"),
+        el("button", { onclick: async () => {
+          busy(true);
+          try { await api(`/admin/api/questions/${q.id}/dismiss`, { method: "POST" }); notice(`Dismissed flags on #${q.id}.`); load(); }
+          catch (e) { notice(`Error: ${e.message}`); busy(false); }
+        } }, "Dismiss (question is fine)"),
+      );
+      root.append(actions);
+
+      const form = el("form", { class: "edit", hidden: true });
+      const field = (label, value, multiline = false) => {
+        const input = multiline ? el("textarea", { rows: 2 }) : el("input", {});
+        input.value = value ?? "";
+        form.append(el("label", {}, label, input));
+        return input;
+      };
+      const fPrompt = field("Question", q.prompt, true);
+      const fCorrect = field("Correct answer", q.correct);
+      const fWrong = q.incorrect.map((w, i) => field(`Wrong answer ${i + 1}`, w));
+      const fExpl = field("Explanation (optional)", q.explanation, true);
+      form.append(el("div", { class: "actions" }, el("button", { class: "primary" }, "Save & re-export")));
+      form.addEventListener("submit", async (ev) => {
+        ev.preventDefault();
+        busy(true);
+        try {
+          await api(`/admin/api/questions/${q.id}`, { method: "PUT", body: JSON.stringify({
+            prompt: fPrompt.value, correct: fCorrect.value, incorrect: fWrong.map((f) => f.value), explanation: fExpl.value || null,
+          }) });
+          notice(`Saved #${q.id}. Daily files re-exported. Deploy to publish.`);
+          load();
+        } catch (e) { notice(`Error: ${e.message}`); busy(false); }
+      });
+      root.append(form);
+    }
+    return root;
+  }
+
+  $("#login").addEventListener("submit", (ev) => { ev.preventDefault(); setToken($("#token").value.trim()); load(); });
+  $("#logout").addEventListener("click", () => { setToken(""); showLogin(); });
+  $("#export").addEventListener("click", async () => {
+    try { const r = await api("/admin/api/export", { method: "POST" }); notice(`Exported ${r.exported} day(s). Deploy to publish.`); }
+    catch (e) { notice(`Error: ${e.message}`); }
+  });
+  document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => {
+    status = b.dataset.status;
+    document.querySelectorAll(".tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    notice("");
+    load();
+  }));
+
+  getToken() ? load() : showLogin();
+</script>
+</body>
+</html>

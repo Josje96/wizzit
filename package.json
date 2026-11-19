@@ -1,0 +1,18 @@
+{
+  "name": "wizzit",
+  "private": true,
+  "workspaces": ["shared", "content", "app"],
+  "scripts": {
+    "dev": "bun run --cwd app dev",
+    "build": "bun run --cwd app build",
+    "import:opentdb": "bun run --cwd content import:opentdb",
+    "seed": "bun run --cwd content seed",
+    "schedule": "bun run --cwd content schedule",
+    "export": "bun run --cwd content export",
+    "reject": "bun run --cwd content reject",
+    "stats": "bun run --cwd content stats",
+    "serve": "bun run --cwd content serve",
+    "dump": "bun run --cwd content dump",
+    "restore": "bun run --cwd content restore"
+  }
+}
